@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: 
+		"box1 box3"
+		"box2 box2"
+	;
+	/* align-items: center; */
+	/* justify-items: center; */
+}
+
+.box1{
+	background-color: lightcoral;
+	grid-area: box1;
+	/* align-self: center;   //horizontally center */
+	/* justify-self: center; //vertically center */
+
+}
+.box2{
+	background-color: lightblue;
+	grid-area: box2;
+}
+.box3{
+	background-color: lightgreen;
+	grid-area: box3;
+}
